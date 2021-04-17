@@ -1,0 +1,216 @@
+* {
+  /* outline: 1px solid green; */
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 245, 245);
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+h1 {
+  font-family: "Abril Fatface", cursive;
+}
+body > div {
+  height: 18vh;
+  margin-top: 4%;
+}
+#sidebar {
+  height: 100%;
+  width: 18%;
+  float: left;
+  padding: 0 0 0 4%;
+  position: absolute;
+}
+#sidebar > button {
+  color: white;
+  background-color: rgb(247, 67, 67);
+  height: 7%;
+  width: 60%;
+  border: 0px;
+  border-radius: 50px;
+}
+#sidebar > button:focus {
+  outline: 0px;
+}
+#sidebar > button:hover {
+  background-color: red;
+}
+#menu-items {
+  position: relative;
+  left: -20%;
+}
+#menu-items > li {
+  list-style-type: none;
+  height: 8vh;
+  font-weight: lighter;
+  opacity: 60%;
+}
+#main {
+  height: 70vh;
+  width: 76.5vw;
+margin-top: 5rem;
+  float: right;
+  margin-left: 3.6%;
+}
+
+/* mobile */
+#mobile-menu {
+  display: none;
+  clear: both;
+  height: auto;
+}
+#mobile-menu > * {
+  display: inline-block;
+}
+#mobile-menu > h1 {
+  font-size: 4vmin;
+  margin-left: 25vw;
+}
+#mobile-menu > i, #mobile-menu > a{
+  margin-top: 3vw;
+}
+
+/* menu */
+#menu-icon {
+  color: red;
+}
+/* menu */
+
+/* shopping cart */
+#shopping-cart {
+  margin-left: 26vw;
+}
+/* shopping cart */
+
+/* mobile */
+
+#header {
+  width: 100%;
+  height: 30vh;
+}
+#header > * {
+  display: inline-block;
+}
+#title {
+  margin-top: 0%;
+  clear: left;
+  width: 58%;
+  height: 28vh;
+  font-size: 10vmin;
+}
+#description,
+.desc {
+  width: 40%;
+  height: 28vh;
+  position: relative;
+  top: -7vh;
+
+  font-weight: lighter;
+  opacity: 60%;
+}
+#mobile-description {
+  height: auto;
+  top: 0%;
+  left: 10%;
+  width: 80%;
+  display: none;
+}
+.desc > hr {
+  width: 20%;
+  height: 1%;
+  border: 0px;
+  position: relative;
+  left: -40%;
+  background-color: red;
+}
+
+#cards {
+  clear: both;
+  width: 100%;
+  height: 60%;
+}
+#cards > .card {
+  float: left;
+  width: 15%;
+  height: 70%;
+  margin-left: 2%;
+  margin-top: 3%;
+  position: relative;
+  left: -1%;
+  border-radius: 8%;
+  text-align: center;
+  vertical-align: middle;
+
+  box-shadow: 0.1vh 0.1vh 1.1vh;
+}
+.card > .image {
+  height: 45%;
+  width: 65%;
+  margin-top: 26%;
+  border-radius: 100%;
+}
+.card > .name {
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  body{
+    overflow-x: hidden;
+  }
+  h1{
+    text-align: center;
+  }
+  #mobile-menu {
+    display: inline-block;
+  }
+  #sidebar {
+    width: 60vw;
+    display: none;
+
+    margin-top: 10vh;
+    margin-left: 4vw;
+  }
+  #main {
+    position: absolute;
+
+    width: 91vw;
+    height: 120vh;
+  }
+  #header {
+    margin-top: 8vh;
+    margin-left: 2vw;
+    height: 6%;
+  }
+  #title {
+    margin-left: 7%;
+    font-size: 4vmin;
+    height: auto;
+  }
+  #description {
+    display: none;
+  }
+  #mobile-description {
+    top: 5%;
+    display: inline-block;
+  }
+  #cards {
+    margin-top: 4vh;
+    height: 55%;
+  }
+  #cards > .card {
+    width: 36%;
+    height: 48%;
+
+    margin-left: 10%;
+  }
+  #noodles-card {
+    display: none;
+  }
+  #menu-items{
+    left: -12%;
+  }
+}
